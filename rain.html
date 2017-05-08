@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gutter Pros NW  |  Current Special</title>
+<!--     <link rel="stylesheet" href="css/foundation.css"> --> 
+		<link rel="stylesheet" href="css/app.css">
+<!--     <link rel="stylesheet" href="css/mainstyle.css"> -->
+		<link rel="stylesheet" href="css/icons/foundation-icons.css" />
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Baloo|Bitter|Handlee" rel="stylesheet">
+</head>
+<body>
+
+<div id ="intro-container" class="intro-container" >
+	<div id="intro-frame-1" class="intro-container flex-container align-middle align-center">
+		<div class="wording-container text-center column small-10 medium-8">
+		<div id = "ani1">
+		<p id = "I1">It's raining.</p>
+		<p id = "I2">Your gutters are overflowing.</p>
+		<p id = "I3">You see a waterfall</p>
+		<p id = "I4">down the side of your house.</p>
+		</div>
+		<div id = "ani2">
+			<p id = "I5" class="text-left">you could:</p>
+			<p id ="I6"> a) do nothing</p>
+			<p id ="I7"> b) go climb your ladder</p>
+			<p id ="I8"> c) let us handle it</p>
+		</div>
+		</div>
+	</div>
+	<div id="intro-frame-2" class="intro-container flex-container align-middle align-center">
+
+	</div>
+
+
+</div>
+
+
+</body>
+
+<!-- $$$ JQuery Min 3.2.1 $$$ -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- <script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">          
+</script> -->
+<!-- $$$ JQuery UI $$$ -->
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<!-- <script
+		src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		crossorigin="anonymous">
+</script> -->
+
+<script src="js/foundation/what-input.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+
+<script>
+	$(document).foundation();
+	/*SETS INTRO WINDOW HEIGHT*/
+	var $initWindowHeight = $(window).height();
+	$('.intro-container').height($initWindowHeight);
+	$('#intro-frame-1').height($initWindowHeight);
+	$('p').hide();
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var $delay = 2500;
+	var $show = 800;
+/*	$('#main-nav-bar').scrollToFixed({zIndex: 10});
+	$('#I1').show('drop', { direction :'down'}, $show);
+	$('#I2').delay($delay).show('drop', { direction :'down'},$show);
+	$('#I3').delay($delay*2).show('drop', { direction :'down'},$show);
+	$('#I4').delay($delay*3).show('drop', { direction :'down'},$show);
+	$('#I5').delay($delay*4).show('drop', { direction :'down'},$show, function(){
+		$('#ani1').slideUp($show);
+		$('#ani1').slideDown($show);
+	});*/
+
+	$('#I1').slideDown($show);
+	$('#I2').delay($delay).slideDown($show);
+	$('#I3').delay($delay*2).slideDown($show);
+	$('#I4').delay($delay*3).slideDown($show);
+	$('#I5').delay($delay*4).slideDown($show, function(){
+		
+		$('#ani1').slideUp($show);
+		$('#I6').delay($delay).slideDown($show,function(){			
+		});		
+		$('#I7').delay($delay*2).slideDown($show,function(){			
+		});
+		$('#I8').delay($delay*3).slideDown($show, function(){
+			$('#I8').delay($delay).animate({color:'red'});
+			$('#intro-frame-1').delay($delay*2).hide('puff', 800);
+		});
+	});
+		
+	
+});
+</script>
+
+
+
+</html>

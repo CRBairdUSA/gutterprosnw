@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/calendar.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">          
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <!-- JQuery UI -->
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+
+<!-- 
+    <script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script> -->
+
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Bitter|Handlee" rel="stylesheet">
+
+
+  </head>
+
+<body class="light-green-bg">
+<div id= "cal-main-container" class="cal-main-container off-black-bg">
+    
+<!-- seasons section -->
+    <div id="cal-season-container" class="cal-container">
+        <div data-type="season" data-when="summer" class="cal-object cal-season light-orange-bg" >
+        <h3 class="text-center">summer</h3>
+        </div>
+        <div data-type="season" data-when="fall" class="cal-object med-orange-bg" >
+        <h3 class="text-center">fall</h3>
+        </div>
+        <div data-type="season" data-when="winter" class="cal-object med-blue-bg" >
+        <h3 class="text-center">winter</h3>
+        </div>
+        <div data-type="season" data-when="spring" class="cal-object med-green-bg" >
+        <h3 class="text-center">spring</h3>
+        </div>
+    </div>
+<!-- months section -->
+    <div id="cal-month-container" data-type="month-container" class="cal-container cal-month-container">
+       
+            <div data-type="month" data-when="june" class="summer cal-object med-orange-bg">JUNE</div>
+            <div data-type="month" data-when="july" class="summer cal-object med-blue-bg">JULY</div>
+            <div data-type="month" data-when="august" class="summer cal-object med-green-bg">AUGUST</div>
+
+            <div data-type="month" data-when="september" class="fall cal-object med-orange-bg">SEPTEMBER</div>
+            <div data-type="month" data-when="october" class="fall cal-object med-blue-bg">OCTOBER</div>
+            <div data-type="month" data-when="november" class="fall cal-object med-green-bg">NOVEMBER</div>
+            
+            <div data-type="month" data-when="december" class="winter cal-object med-orange-bg">december</div>
+            <div data-type="month" data-when="january" class="winter cal-object med-blue-bg">january</div>
+            <div data-type="month" data-when="february" class="winter cal-object med-green-bg">february</div>
+    
+            <div data-type="month" data-when="march" class="spring cal-object med-orange-bg">march</div>
+            <div data-type="month" data-when="april" class="spring cal-object med-blue-bg">april</div>
+            <div data-type="month" data-when="may" class="spring cal-object med-green-bg">may</div>
+    </div> 
+<!-- Weeks section -->
+    <div id="cal-week-container" data-type="week-container" class="cal-container">
+        <div data-type="week" class="june" data-week="a" data-url="#">Early June</div>
+        <div data-type="week" class="june" data-week="b" data-url="#">Late June</div>
+        <div data-type="week" class="july" data-week="a" data-url="#">JULY week A</div>
+        <div data-type="week" class="july" data-week="b" data-url="#">July week B</div>
+        <div data-type="week" class="august" data-week="a" data-url="#"></div>
+        <div data-type="week" class="august" data-week="b" data-url="#"></div>
+        <div data-type="week" class="september" data-week="a" data-url="#"></div>
+        <div data-type="week" class="september" data-week="b" data-url="#"></div>
+        <div data-type="week" class="october" data-week="a" data-url="#"></div>
+        <div data-type="week" class="october" data-week="b" data-url="#"></div>
+        <div data-type="week" class="november" data-week="a" data-url="#"></div>
+        <div data-type="week" class="november" data-week="b" data-url="#"></div>
+        <div data-type="week" class="december" data-week="a" data-url="#"></div>
+        <div data-type="week" class="december" data-week="b" data-url="#"></div>
+        <div data-type="week" class="january" data-week="a" data-url="#"></div>
+        <div data-type="week" class="january" data-week="b" data-url="#"></div>
+        <div data-type="week" class="february" data-week="a" data-url="#"></div>
+        <div data-type="week" class="february" data-week="b" data-url="#"></div>
+        <div data-type="week" class="march" data-week="a" data-url="#"></div>
+        <div data-type="week" class="march" data-week="b" data-url="#"></div>
+        <div data-type="week" class="april" data-week="a" data-url="#"></div>
+        <div data-type="week" class="april" data-week="b" data-url="#"></div>
+        <div data-type="week" class="may" data-week="a" data-url="#"></div>
+        <div data-type="week" class="may" data-week="b" data-url="#"></div>
+    </div>
+
+
+</div><!-- end main calendar container -->
+
+
+
+
+    <script src="js/calendar.js" type="text/javascript"></script>
+</body>
+</html>

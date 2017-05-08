@@ -1,0 +1,121 @@
+@import 'settings';
+@import 'util/mixins';
+
+// @include foundation-grid;
+.calculator{
+	@include grid-column(12);
+	@include breakpoint(medium only)
+		{@include grid-column(11);}
+	@include breakpoint(large up) 
+		{@include grid-column(8);}
+	
+
+
+/****** Styling for the slider containers ******/
+	.input-box{
+		@include flex-grid-column(11);
+		@include grid-row(collapse);
+		@include breakpoint(medium only) 
+			{@include flex-grid-column(11);
+			@include grid-row(collapse);}
+		
+		
+		.desc-box{
+		/* background-color: $med-green; */
+		height: 200px;
+		@include flex-grid-column(12);
+		
+		}
+		.pic-box{
+			height: 100%;
+			min-width: 200px;
+			background-color: $bright-blue;
+
+			@include flex-grid-column();
+			@include flex-align-self();
+		}
+		.words-box{
+			@include grid-column(12);
+			@include breakpoint(medium up) {
+				@include grid-column(6);
+			}
+			@include hide-for-only(small);
+		}
+		
+		.calc-question{}
+		.slider{
+		margin-bottom: 20px;	
+		@include grid-column(12);
+		
+		
+		@include breakpoint(medium up) {
+			@include grid-column(6);
+
+		}
+		}	
+		
+
+	}
+/****** Styling for Switch Containers ******/
+
+	.switch-box{
+		@include grid-column(12);
+		@include breakpoint(medium up) {
+			@include flex-grid-column(6);}
+		/* background-color: $med-green; */
+		
+		.desc-box{
+		@include flex-grid-row(collapse);
+		
+		}
+		.pic-box{
+			background-color: $bright-blue;
+			/*  */
+			overflow: hidden;
+			float:left;
+			 @include grid-column(12); 
+			 @include breakpoint(medium up)
+			 	{@include grid-column();}
+
+			 img{
+			 	/* height: 170px; */
+				width:150px;
+				
+			 }
+		}
+		.words-box{}
+		.switch{
+			/*  @include grid-column(6); */ 	
+				
+		}
+		.calc-question{
+			@include grid-column();
+			@include breakpoint(medium up) 
+				{padding-left: 5px;
+				margin: 0;}
+				p{padding-left: 5px; margin:0;}
+			display: inline-block;
+		}
+	} 
+}
+.price-container{
+
+		@include flex-grid-column(12)
+		
+		@include breakpoint(medium up)
+			{@include flex-grid-column(11);}
+				
+	 	@include breakpoint(large up)	
+	 		{@include flex-grid-column(4);}
+
+		
+		.price-box{
+			@include flex-align(left);	
+			text-align: center;
+		padding:5px;
+		border-style: solid;
+		border-color: $off-black;
+		}
+		.button{margin-bottom:100px;}
+		#calcprice-printed{font-size: 2rem;}
+	}

@@ -1,0 +1,85 @@
+@import 'settings';
+/*********************************************************/
+/* ---- Color Classes ----*/
+.light-orange-font{color: rgb(247, 148, 29);}
+.light-orange-bg{background-color: rgb(247, 148, 29);}
+.med-orange-font{color: rgb(225, 87, 26);}
+.med-orange-bg{background-color: RGB(225, 87, 26);}
+.med-blue-font{color: RGB(91, 139, 149);}
+.med-blue-bg{background-color: RGB(91, 139, 149);}
+.light-green-font{color: RGB(236, 250, 244);}
+.light-green-bg{background-color: RGB(236, 250, 244);}
+.med-green-font{color: RGB(55,92,66);}
+.med-green-bg{background-color: RGB(55,92,66);}
+.off-black-font{color: rgb(51,51,51);}
+.off-black-bg{background-color: RGB(51,51,51);}
+.dark-off-black-font{color: rgb(26,23,23);}
+.dark-off-black-bg{background-color: rgb(26,23,23);}
+
+$headermargin:100px;
+
+footer{
+	min-height: 300px;
+	padding: 80px 0;
+	margin-top: 5rem;
+}
+.brand-header-small{
+	position:relative;
+	padding-bottom: $headermargin;
+}
+.brand-header-logo{
+	position:absolute;
+	right: 0px;
+	z-index: 2;
+}
+.full-width-text-ad{
+	.row{margin:0px; padding:0px;} 
+	h3{font-family: $handlee;}
+	strong{color:$dark-off-black;}
+	button{margin: .5rem;}
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+.full-width-text-ad{
+	div{}
+	p{padding: 0 0.0rem;color: $off-black;  min-width:400px; max-width: 800px}
+	a{color:$med-blue;}
+	h1{padding:1rem 0;}
+	h2{padding:1rem 0;}
+	h3{padding:0.5rem 0; padding-top: 1rem;}
+	span{font-size: $large-font*0.9; color: $med-orange; margin-left: 0;}
+	.side-text{
+		max-width: 500px;
+		min-width: 100px;
+		color: $off-black;
+	}
+}
+
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {
+	.full-width-text-ad{
+	div{}
+	p{padding: 0 1rem;color: $off-black; min-width:400px; max-width: 800px}
+	a{}
+	/* a:hover{color:$light-orange;} */
+	h1{padding:2rem 0; }
+	h2{padding:1rem 0;}
+	h3{padding:1rem 0; padding-top: 1rem;}
+	span{font-size: $large-font; color: $med-orange;}
+	.side-text{
+		max-width: 500px;
+		min-width: 100px;
+		color: $off-black;
+	}
+}
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+

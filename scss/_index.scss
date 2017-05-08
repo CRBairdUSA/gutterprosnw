@@ -1,0 +1,27 @@
+@import 'settings';
+@import 'util/mixins';
+
+#brand-header{
+
+	/* Gradient created by color zilla */
+	background: -moz-linear-gradient(top, rgba(236,250,244,0) 0%, rgba(147,173,157,0) 49%, rgba(145,171,155,0.9) 50%, rgba(55,92,66,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(236,250,244,0) 0%,rgba(147,173,157,0) 49%,rgba(145,171,155,0.9) 50%,rgba(55,92,66,1) 100%);
+	background: linear-gradient(to bottom, rgba(236,250,244,0) 0%,rgba(147,173,157,0) 49%,rgba(145,171,155,0.9) 50%,rgba(55,92,66,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ecfaf4', endColorstr='#375c42',GradientType=0 );
+
+	.brand-logo{
+		max-height:400px;
+		min-height: 220px;
+		min-width: 200px;
+	}
+}
+#ad-bar-1{
+	max-width:1200px;
+	i{font-size:10rem; line-height:1rem;}
+	.ad-card{min-width:242px; height:540px;}
+}
+
+#quote-box{
+	max-width:380px;
+	img{align-content: center;}
+}

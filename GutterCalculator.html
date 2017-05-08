@@ -1,0 +1,239 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gutter Pros NW  |  Current Special</title>
+<!--     <link rel="stylesheet" href="css/foundation.css"> --> 
+		<link rel="stylesheet" href="css/app.css">
+<!--     <link rel="stylesheet" href="css/mainstyle.css"> -->
+		<link rel="stylesheet" href="css/icons/foundation-icons.css" />
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Baloo|Bitter|Handlee" rel="stylesheet">
+</head>
+<body >
+<!-- ********************************************************
+				Header section of single pages
+******************************************************** -->
+		
+		<div class="brand-header-small row expanded ">
+				<!-- <img src ="images/gutterboy_head_tiny.png"> -->
+				
+		<img class = "brand-header-logo" src ="images/gutter_pros_logo_small.png">
+		</div>
+
+
+		<div id = "main-nav-bar"  class ="row expanded light-orange-bg">
+		<ul class="dropdown menu" data-dropdown-menu>
+			<li class="active"><a href="#first" class = "off-black-font">About </a></li>
+			<li><a href="#sec" class = "is-drilldown off-black-font">Services </a>
+			<ul>
+				<li class=""><a>Gutter Cleaning</a></li>
+				<li class=""><a>Rain Chains</a></li>
+			</ul>
+			</li>
+			<li><a href="#third" class = "off-black-font">Pricing </a></li>
+			<li><a href="#fourth" class = "off-black-font">Contact</a></li>
+		</ul>
+		</div>
+
+
+
+<!-- ********************************************************
+				End Header Section of single pages
+******************************************************** -->
+<div id="main-content-container" class="row space-waster" style="min-height: 600px; padding-top: 150px;"" >
+	<div id = "page-title-container" class="">
+<!-- 		<h1 class="page-title column">Gutter Cleaning Calculator</h1>
+		<h2 class="page-subtitle"></h2> -->
+	</div>
+
+
+	<div id="calculator" class=" calculator"> 
+
+		<div id class ="input-box">
+			<h4 class="calc-question">What size is your house?</h4>
+			<div id="" src="#" class="desc-box ">
+				<img src ="images/calc/size1.png" id="size-pic" class="pic-box">
+
+				<div class="words-box"><h4>Small</h4>The common house in the NW is most certainly the 'Average' sized house.</div>
+			</div>
+			<!-- $$$ Size Output Slider $$$-->
+			<div class="slider" data-slider data-initial-start="0" data-initial-end="100" data-step="50">
+						<span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="size-output">
+						</span>
+						<span class="slider-fill" data-slider-fill></span>
+					<input type="hidden" id="size-output">
+			</div>
+			
+		</div>
+		<div id" class ="input-box"	>
+			<h4 class="calc-question">How many gutters does it have?</h3>	
+			<div id="" src="#" class="desc-box ">
+					<img src ="images/calc/gutters1.png" id="gutter-pic" class="pic-box">
+				<div class="words-box"><h4>Few</h4>Most Small houses have small gutters!</div>
+			</div>
+
+			<!--  $$$ No of Gutters Slider $$$ -->
+				<div class="slider" data-slider data-initial-start="0" data-initial-end="100" data-step="50">
+							<span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="gutter-output">
+							</span>
+							<span class="slider-fill" data-slider-fill></span>
+						<input type="hidden" id="gutter-output">
+				
+			</div>
+			
+		</div>
+		<div id" class ="input-box">
+			<h4 class="calc-question">How full are your gutters?</h4>	
+			<div id="" src="#" class="desc-box">
+					<img src ="images/calc/fullness1.png" id="fullness-pic" class="pic-box">
+					<div class="words-box"><h4>Light</h4>Sometimes it only take 1 pinecone to mess up the whole works!</div>
+			</div>
+				<!--  $$$ Fullness Output Slider $$$ -->
+				<div class="slider" data-slider data-initial-start="0" data-initial-end="100" data-step="50">
+							<span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="fullness-output">
+							</span>
+							<span class="slider-fill" data-slider-fill></span>
+						<input type="hidden" id="fullness-output">
+				</div>
+				
+		</div>
+
+
+				<!--  $$$ over 25ft switch $$$ -->
+			<div id" class ="switch-box"	>
+				<div id="" src="#" class="desc-box">
+						<div class="pic-box">
+							<img class="" src="images/gutterbro_little.png">
+						</div>
+					<div class="calc-question"><p>Any Gutters over 25ft tall?</p>
+						<div class="switch">
+								<input class="switch-input" id="over25-output" type="checkbox" name="over25-output">
+								<label class="switch-paddle" for="over25-output">
+										<span class="show-for-sr">Gutters over 25ft up?</span>
+										<span class="switch-active" aria-hidden="true">Yes</span>
+										<span class="switch-inactive" aria-hidden="true">No</span></label>
+						</div>
+					</div>	
+				</div>				
+			</div>
+							<!--  $$$ no reach from ladder switch $$$ -->
+			<div id" class ="switch-box"	>
+				<div id="" src="#" class="desc-box">
+						<div class="pic-box">
+							<img class="gb-pic" src="images/gutterbro_little.png">
+						</div>
+					<div class="calc-question"><p>Any Gutters not reachable by ladder?</p>
+						<div class="switch">
+								<input class="switch-input" id="noreach-output" type="checkbox" name="noreach-output">
+								<label class="switch-paddle" for="noreach-output">
+										<span class="show-for-sr">Gutter Unreachable from ladder?</span>
+										<span class="switch-active" aria-hidden="true">Yes</span>
+										<span class="switch-inactive" aria-hidden="true">No</span></label>
+						</div>	
+					</div>
+				</div>
+			</div>
+		
+	
+	</div>
+	<!-- End Calculator -->
+
+	<div id="price-container" class ="price-container" data-sticky-container >
+		<div id="price-box" class="price-box">		
+			<div id="calcprice-printed">90</div>
+			
+		
+			<div id="button-container">
+				<a id="confirm" class='button large success' >Confirm Price</a>
+			</div>
+			<img id="" class="" src="images/gutterbro_little.png">
+		</div>
+	</div>
+
+</div><!-- END MAIN CONTAINER -->
+
+
+
+
+
+
+
+<!-- ********************************************************
+				Footer Section of single pages
+******************************************************** -->
+		<footer class ="off-black-bg">
+				<div class="row wrap small-up-1 medium-up-2 ">
+						<div class = "column">
+								<p class= "light-green-font text-justify">
+										Gutter Bros.NW is a Licenced and Insured Janitorial
+										Company Operating through out the larger Vancouver
+										Area.<br><br>To see the details of Work Guarentee, Policies and Proof of insurance and licencing Check the link Below.<br>
+								</p>
+								<p class = "text-center"><a class = "text-right" href="#">Policies and documents </a></p>
+										
+						</div>
+						<div class = "column ">
+								<p class= "light-green-font text-center">
+										<p class="light-green-font phone-number"> 503-853-2367</p>
+										<p class="light-green-font email-address">Chris@Gutterprowsnw.com</p>
+										<p class="light-green-font office-address">
+										2323 N Whobut Ln<br>
+										Vancouver, WA 97666</p>
+								</p>
+						</div>
+				
+				</div>
+		</footer>
+
+
+</body>
+
+
+<!-- $$$ JQuery Min 3.2.1 $$$ -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- <script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">          
+</script> -->
+<!-- $$$ JQuery UI $$$ -->
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<!-- <script
+		src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		crossorigin="anonymous">
+</script> -->
+
+<script src="js/foundation/what-input.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+<script src="js/calc.js"></script>
+
+<script>
+		$(document).foundation();
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+		$('#main-nav-bar').scrollToFixed({zIndex: 10});
+		$("#calculator").load("calculator.html #special_offer_text");
+		$('#price-container').scrollToFixed({marginTop: 100, limit: 1000, zIndex: 0});
+});
+</script>
+<script type="text/javascript">
+$('#confirm').click(function(){
+	
+	$(this).animate({marginBottom: '-=150px'}, 'fast');
+ 	$(this).animate({marginBottom: '+=150px'}, 'fast');
+ 	$(this).addClass('alert')
+});
+
+
+
+</script>
+
+
+</html>
