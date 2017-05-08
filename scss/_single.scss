@@ -1,0 +1,37 @@
+@import 'settings';
+@import 'util/mixins';
+
+
+.topic{
+	padding-top: 50px;
+	p{@include callout($white); }
+
+	@include breakpoint(small only)
+	{
+		@include flex-grid-column(12);	
+		p{ padding: 50px 15px;}
+	}
+	@include breakpoint(medium only)
+	{
+		@include flex-grid-column(10);
+		p{ padding: 50px;}
+
+	}
+	@include breakpoint(large up)
+	{
+		@include flex-grid-column(8);
+		p{ padding: 50px;}		
+	}
+	
+	h2{
+		@include flex-grid-column(12);
+		padding-top: 10px;
+		text-align: right;
+	}
+	
+	a{}
+	hr{}
+
+}
+
+.link-to-top{text-align: center; color: $off-black; }
