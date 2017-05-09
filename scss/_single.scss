@@ -4,6 +4,7 @@
 
 .topic{
 	padding-top: 50px;
+	color:$off-black;
 	p{@include callout($white); }
 
 	@include breakpoint(small only)
@@ -27,6 +28,7 @@
 		@include flex-grid-column(12);
 		padding-top: 10px;
 		text-align: right;
+
 	}
 	
 	a{}

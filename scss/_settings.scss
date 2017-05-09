@@ -74,7 +74,7 @@ $large-font: 1.7rem;
 $xlarge-font: 2rem;
 
 $body-background: $light-green;
-$body-font-color: $black;
+$body-font-color: $off-black;
 
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
@@ -367,12 +367,12 @@ $dropdown-sizes: (
 // 18. Dropdown Menu
 // -----------------
 
-$dropdownmenu-arrows: true;
+$dropdownmenu-arrows: false;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-min-width: 200px;
-$dropdownmenu-background: $light-green;
-$dropdownmenu-border: 1px solid $med-orange;
+$dropdownmenu-background: $off-black;
+$dropdownmenu-border: 0px solid $off-black;
 
 // 19. Forms
 // ---------
@@ -614,10 +614,10 @@ $thumbnail-radius: $global-radius;
 // 35. Title Bar
 // -------------
 
-$titlebar-background: $black;
+$titlebar-background: $light-orange;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
-$titlebar-text-font-weight: bold;
+$titlebar-text-font-weight: normal;
 $titlebar-icon-color: $white;
 $titlebar-icon-color-hover: $medium-gray;
 $titlebar-icon-spacing: 0.25rem;

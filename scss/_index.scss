@@ -17,8 +17,11 @@
 }
 #ad-bar-1{
 	max-width:1200px;
+	margin-top: 50px;
+	margin-bottom:50px;
+	padding:20px;
 	i{font-size:10rem; line-height:1rem;}
-	.ad-card{min-width:242px; height:540px;}
+	.ad-card{min-width:242px; min-height:400px; }
 }
 
 #quote-box{
