@@ -1,30 +1,180 @@
 @import 'settings';
 @import 'util/mixins';
 
-#brand-header{
+$sectionpadding:75px;
+$sectionmargin:10px;
 
-	/* Gradient created by color zilla */
-	background: -moz-linear-gradient(top, rgba(236,250,244,0) 0%, rgba(147,173,157,0) 49%, rgba(145,171,155,0.9) 50%, rgba(55,92,66,1) 100%);
-	background: -webkit-linear-gradient(top, rgba(236,250,244,0) 0%,rgba(147,173,157,0) 49%,rgba(145,171,155,0.9) 50%,rgba(55,92,66,1) 100%);
-	background: linear-gradient(to bottom, rgba(236,250,244,0) 0%,rgba(147,173,157,0) 49%,rgba(145,171,155,0.9) 50%,rgba(55,92,66,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ecfaf4', endColorstr='#375c42',GradientType=0 );
+section{margin-top: $sectionmargin;}
 
-	.brand-logo{
-		max-height:400px;
-		min-height: 220px;
-		min-width: 200px;
-	}
+#jumbotron{
+	min-height: 500px;
+	min-width: 250px;
+	background-color: $bright-blue;
 }
+#specials-ad{
+	position: relative;
+	background-color: $sangria;
+	text-align: center;
+	padding: 60px 0px;
+	max-width: 340px;
+	min-width: 250px;
+	max-height: 250px;
+	/* 
+	min-width:350px; 
+	max-width:570px; */
+
+	hr{border-top: 8px double $light-orange;
+	}
+	h3{	color: $peach;}
+	h4{ 
+		i{font-size: 1em; color: inherit; position:inherit;}
+		color: $peach;
+	}
+
+	i{
+		font-size: 3em;
+		position: absolute;
+		z-index: 0;
+		color: $peach;
+	}
+	$side-pos:15px;
+	$top-pos:0px;
+	.top-l{top:0; left:$side-pos;}
+	.top-r{top:0; right:$side-pos;}
+	.bottom-l{bottom: 0; left:$side-pos;}
+	.bottom-r{bottom: 0; right:$side-pos;}
+	.center{
+		position: absolute;
+		bottom:40;
+		text-align: center;
+ 		font-size: 5rem;
+	}
+
+}
+
 #ad-bar-1{
 	max-width:1200px;
-	margin-top: 50px;
-	margin-bottom:50px;
-	padding:20px;
+	
+	padding: $sectionpadding 0px;
+
 	i{font-size:10rem; line-height:1rem;}
-	.ad-card{min-width:242px; min-height:400px; }
+	.ad-card{
+		min-width:242px; 
+		max-width: 410px; 
+		min-height:400px; 
+		background-color: $light-green;
+		margin-bottom: 0px;
+
+	}
+	/* background-color: $bright-green; */
+
+}
+#ad-bar-2{
+	background-color: $med-blue;
+	padding: $sectionpadding 0px;
+	#quote-box{
+		min-width:242px;
+		max-width: 410px;
+		img{align-content: center;}
+
+	}	
+}
+#ad-bar-3{
+	z-index: -10;
+	position: relative;
+	padding: $sectionpadding 0px;
+	background-color: $sangria;
+	color:$white;
+	h3{z-index: 20;position: relative;}
+	h2{z-index: 20;position: relative;}
+	img{min-width: 250px; padding: 20px 0; z-index: 20;position: relative;}
+	i{
+		font-size: 7em;
+		position: absolute;
+		z-index: 0;
+		color: $peach;
+	}
+	div{position: relative;}
+	$side-pos:30px;
+	$top-pos:0px;
+	.top-l{top:0; left:$side-pos;}
+	.top-r{top:0; right:$side-pos;}
+	.bottom-l{bottom: 0; left:$side-pos;}
+	.bottom-r{bottom: 0; right:$side-pos;}
+	.center{
+		position: absolute;
+		bottom:40;
+		text-align: center;
+ 		font-size: 25rem;
+	}
+}
+#how-it-works{
+	.section-title{
+		background-color: $light-orange;
+		padding: $sectionpadding 0px;
+		h2{
+			
+			font-size: 3rem;
+		}
+	}
+	.how-to-card{
+		background-color: $med-blue;
+		padding: 0px;
+		min-height:400px; 
+		background-color: $light-green;
+		.card-section{
+			background-color: $med-blue;
+		}
+		p{
+			text-align: left;
+			padding: 10px;
+		}
+	}
 }
 
-#quote-box{
-	max-width:380px;
-	img{align-content: center;}
+
+
+#highlights-box{
+	
+	height:450px;
+	min-width: 380px;
+	
+	.speech-bubble{
+		/* @include flex-align(center, center); */
+		position: relative;
+		/* Border radius of 30px | Border Thickness of 10px */
+		border-radius: 30px 30px 30px 30px;
+		-moz-border-radius: 30px 30px 30px 30px;
+		-webkit-border-radius: 30px 30px 30px 30px;
+		border: 10px solid $light-green;
+
+		background-color: $light-green;
+		min-height:300px;
+		padding-left: 20px;
+
+		h3{font-size: 3em; text-align: left;} 
+	}
+	.talking-head{
+		position: absolute;
+		bottom: -150px;
+		right: -50px;
+		width: 200px;
+		height: 200px;		
+	}
 }
+
+
+.circle-number{
+	display: inline-block;
+	$circle-size: 75px;
+	position: relative;
+	height:$circle-size;
+	width: $circle-size;
+	border-radius: 50%;
+	background-color: $light-orange;	
+	line-height:$circle-size;
+	font-size: $circle-size;
+		
+	
+}
+
